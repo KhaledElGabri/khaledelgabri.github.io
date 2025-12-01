@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bg-primary: #14171C;
+    --bg-card: #2C343F;
+    --text-primary: #E2E8F0;
+    --text-secondary: #9CA3AF;
+    --accent-blue: #40bcf4;
+    --accent-green: #00B021;
+    --accent-orange: #F27405;
+    --border: #556678;
+}
+
+.theme-light {
+    --bg-primary: #dedede;
+    --bg-card: #F0F4F8;
+    --text-primary: #1F2937;
+    --text-secondary: #4B5563;
+    --accent-green: #008C1B;
+    --accent-orange: #D96604;
+    --border: #E5E7EB;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.card {
+    background-color: var(--bg-card);
+}
+
+.text-primary {
+    color: var(--text-primary);
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+.text-blue {
+    color: var(--accent-blue);
+}
+
+.text-green {
+    color: var(--accent-green);
+}
+
+.text-orange {
+    color: var(--accent-orange);
+}
+
+.border-custom {
+    border-color: var(--border);
+}
+
+.border-green {
+    border-color: var(--accent-green);
+}
+
+.border-blue {
+    border-color: var(--accent-blue);
+}
+
+.hover-blue:hover {
+    color: var(--accent-blue);
+}
+
+.hover-border-blue:hover {
+    border-color: var(--accent-blue);
+}
+
+.hover-orange:hover {
+    color: var(--accent-orange);
+}
+
+.hover-border-green:hover {
+    border-color: var(--accent-green);
+}
+
+.hover-border-orange:hover {
+    border-color: var(--accent-orange);
+}
+
+.tag {
+    background-color: color-mix(in srgb, var(--bg-card) 50%, var(--bg-primary));
+}
+
+.github-link {
+    transition: all 0.3s ease;
+}
+
+.github-link:hover {
+    transform: scale(1.1);
+}
